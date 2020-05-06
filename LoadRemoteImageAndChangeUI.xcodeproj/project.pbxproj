@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52D8CC0CF61EC1BDB19D905E /* Pods_LoadRemoteImageAndChangeUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FA75EE53C588F6B96CAE72 /* Pods_LoadRemoteImageAndChangeUI.framework */; };
 		E0AE4E60241E0B240045ABA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AE4E5F241E0B240045ABA7 /* AppDelegate.swift */; };
 		E0AE4E62241E0B240045ABA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AE4E61241E0B240045ABA7 /* SceneDelegate.swift */; };
 		E0AE4E64241E0B240045ABA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AE4E63241E0B240045ABA7 /* ContentView.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58FA75EE53C588F6B96CAE72 /* Pods_LoadRemoteImageAndChangeUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoadRemoteImageAndChangeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCBA551A0D7148E7FF000B46 /* Pods-LoadRemoteImageAndChangeUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoadRemoteImageAndChangeUI.debug.xcconfig"; path = "Target Support Files/Pods-LoadRemoteImageAndChangeUI/Pods-LoadRemoteImageAndChangeUI.debug.xcconfig"; sourceTree = "<group>"; };
 		E0AE4E5C241E0B240045ABA7 /* LoadRemoteImageAndChangeUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadRemoteImageAndChangeUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AE4E5F241E0B240045ABA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0AE4E61241E0B240045ABA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		E0AE4E68241E0B260045ABA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0AE4E6B241E0B260045ABA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0AE4E6D241E0B260045ABA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23FCE1B20FDC7EE30EB08B4 /* Pods-LoadRemoteImageAndChangeUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoadRemoteImageAndChangeUI.release.xcconfig"; path = "Target Support Files/Pods-LoadRemoteImageAndChangeUI/Pods-LoadRemoteImageAndChangeUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D8CC0CF61EC1BDB19D905E /* Pods_LoadRemoteImageAndChangeUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E43A3F92E323B23F1B948CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58FA75EE53C588F6B96CAE72 /* Pods_LoadRemoteImageAndChangeUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C68264AB1821BD70AF6111AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCBA551A0D7148E7FF000B46 /* Pods-LoadRemoteImageAndChangeUI.debug.xcconfig */,
+				F23FCE1B20FDC7EE30EB08B4 /* Pods-LoadRemoteImageAndChangeUI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E0AE4E53241E0B240045ABA7 = {
 			isa = PBXGroup;
 			children = (
 				E0AE4E5E241E0B240045ABA7 /* LoadRemoteImageAndChangeUI */,
 				E0AE4E5D241E0B240045ABA7 /* Products */,
+				C68264AB1821BD70AF6111AF /* Pods */,
+				3E43A3F92E323B23F1B948CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0AE4E70241E0B260045ABA7 /* Build configuration list for PBXNativeTarget "LoadRemoteImageAndChangeUI" */;
 			buildPhases = (
+				AC06A5BC962B1A88306435B7 /* [CP] Check Pods Manifest.lock */,
 				E0AE4E58241E0B240045ABA7 /* Sources */,
 				E0AE4E59241E0B240045ABA7 /* Frameworks */,
 				E0AE4E5A241E0B240045ABA7 /* Resources */,
+				F21A6FD18272AD6DE8F21C28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC06A5BC962B1A88306435B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoadRemoteImageAndChangeUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F21A6FD18272AD6DE8F21C28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoadRemoteImageAndChangeUI/Pods-LoadRemoteImageAndChangeUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoadRemoteImageAndChangeUI/Pods-LoadRemoteImageAndChangeUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoadRemoteImageAndChangeUI/Pods-LoadRemoteImageAndChangeUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0AE4E58241E0B240045ABA7 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		E0AE4E71241E0B260045ABA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCBA551A0D7148E7FF000B46 /* Pods-LoadRemoteImageAndChangeUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +372,7 @@
 		};
 		E0AE4E72241E0B260045ABA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F23FCE1B20FDC7EE30EB08B4 /* Pods-LoadRemoteImageAndChangeUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

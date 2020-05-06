@@ -1,0 +1,6 @@
+framework module Pods_LoadRemoteImageAndChangeUI {
+  umbrella header "Pods-LoadRemoteImageAndChangeUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
